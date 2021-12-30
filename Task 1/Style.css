@@ -1,0 +1,64 @@
+.mainContainer {
+  background-image: linear-gradient(
+    to right top,
+    #90116f,
+    #8f1c8b,
+    #842daa,
+    #6941cb,
+    #1254eb
+  );
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 55px;
+  margin: 0px;
+}
+
+.userDetails {
+  height: 83vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.userDetails * {
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.pagination {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  height: 44px;
+  align-items: center;
+}
+
+.starting *,
+.ending * {
+  width: 77px;
+  height: 35px;
+}
+
+.starting,
+.ending {
+  padding: 0px 100px;
+}
+
+button {
+  background-color: #d9c5dd;
+  transition: all 0.2s;
+}
+
+.inbetween * {
+  width: 37px;
+  height: 35px;
+}
+
+button:hover {
+  background-color: rgb(136, 136, 136);
+  transform: scale(1.5);
+}

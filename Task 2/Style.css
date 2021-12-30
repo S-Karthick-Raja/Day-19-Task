@@ -1,0 +1,125 @@
+body {
+  display: grid;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+body * {
+  font-size: 25px;
+}
+
+.CalcBody {
+  border: solid;
+  background-color: black;
+  border-radius: 10%;
+  overflow: hidden;
+  margin: 5px;
+  max-width: 288px;
+}
+
+.display {
+  border: solid black;
+  height: 60px;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.display * {
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  font-size: 52px;
+}
+
+.Numpad {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  margin: 20px;
+}
+
+.Numpad * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+}
+
+.firstRow {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.firstRow button:nth-child(2) {
+  width: 100%;
+  border-radius: 28%;
+}
+
+.lastRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.lastRow button:nth-child(1) {
+  width: 100%;
+  border-radius: 28%;
+}
+
+.symbols {
+  background-color: orange;
+}
+
+.other {
+  background-color: grey;
+  color: black;
+}
+
+.num {
+  background-color: #4a3e3e;
+}
+
+@media (min-width: 768px) {
+  .CalcBody {
+    max-width: none;
+    width: auto;
+  }
+
+  .Numpad * {
+    width: 80px;
+    height: 68px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .CalcBody {
+    max-width: none;
+    width: auto;
+  }
+
+  .Numpad * {
+    width: 100px;
+    height: 100px;
+  }
+
+  .display {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .Numpad * {
+    width: 180px;
+    height: 140px;
+  }
+
+  .display {
+    width: 130px;
+    height: 100px;
+  }
+}
